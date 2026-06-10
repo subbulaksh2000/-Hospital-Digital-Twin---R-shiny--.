@@ -1,90 +1,39 @@
-🏥 Hospital Digital Twin Dashboard using R Shiny
-<p align="center">
-R Shiny • Healthcare Analytics • Patient Flow • Digital Twin Simulation
 
-Building a data-driven hospital operations dashboard to simulate patient movement, monitor healthcare performance, and support operational decision-making.
+# 🏥 Hospital Digital Twin Dashboard
 
-</p>
-📌 Project Overview
+Interactive healthcare analytics dashboard built using **R Shiny** to simulate patient flow, monitor hospital operations, and explore healthcare insights through interactive visualisation.
 
-The Hospital Digital Twin Dashboard is an interactive healthcare analytics application developed using R Shiny.
+---
 
-This project creates a simplified digital representation of hospital operations by integrating patient records, outpatient information, medical records, and operational indicators into a unified dashboard.
+## 📌 Overview
 
-The objective is to simulate and monitor hospital performance in near real-time to support healthcare planning and improve patient experience.
+The Hospital Digital Twin Dashboard is an R Shiny application designed to provide an interactive representation of hospital operations.
 
-🎯 Project Objectives
-Monitor patient admissions and flow across hospital services
-Visualise operational healthcare metrics
-Analyse patient distribution and service utilisation
-Support data-driven decision making
-Simulate hospital capacity and operational scenarios
-Build a foundation for digital twin healthcare applications
-🗂 Dataset Overview
+This project integrates multiple healthcare datasets including patient information, outpatient records, medical records, and clinical indicators to support operational analysis and decision-making.
 
-The dashboard integrates multiple healthcare datasets.
+The dashboard allows users to monitor hospital activity, explore patient trends, analyse healthcare data, and simulate operational scenarios.
 
-Dataset	Description
-CheckPatientType.csv	Patient category and classification
-Fill_Information.csv	Patient demographic and registration information
-MedicalRecord1–4.csv	Medical encounter and treatment records
-OutPatientDepartment.csv	Outpatient department activity
-CheckBloodPressure.csv	Patient vital signs and blood pressure data
-🧩 Dashboard Features
-1. Executive Overview
+---
 
-Monitor overall hospital performance through KPI indicators.
+## ✨ Features
 
-Metrics
+- Interactive R Shiny dashboard
+- Patient analytics and monitoring
+- Medical record exploration
+- Blood pressure and health analysis
+- Outpatient department insights
+- Hospital operational visualisation
+- Digital Twin simulation module
 
-✅ Total Patients
-✅ Active Records
-✅ Average Blood Pressure
-✅ Department Distribution
-✅ Patient Type Breakdown
+---
 
-2. Patient Flow Analytics
+## 📂 Project Structure
 
-Track patient movement and operational behaviour.
-
-Visualisations
-Patient Registration Trends
-Patient Type Distribution
-Service Utilisation
-Operational Load Monitoring
-3. Clinical Analytics
-
-Analyse patient health information.
-
-Visualisations
-Blood Pressure Monitoring
-Medical Record Distribution
-Clinical Activity Overview
-4. Digital Twin Simulation
-
-Simulate operational scenarios.
-
-Example Scenarios
-Scenario	Output
-Increase patient arrivals	Capacity impact
-Increase department demand	Resource utilisation
-Higher outpatient volume	Predicted congestion
-Patient redistribution	Operational balance
-🛠 Technology Stack
-Frontend
-R Shiny
-Shinydashboard
-Data Processing
-dplyr
-tidyr
-janitor
-lubridate
-Visualisation
-ggplot2
-plotly
-DT
-📂 Project Structure
+```plaintext
 hospital-digital-twin-dashboard/
+│
+├── app.R
+├── README.md
 │
 ├── data/
 │   ├── CheckPatientType.csv
@@ -96,22 +45,88 @@ hospital-digital-twin-dashboard/
 │   ├── OutPatientDepartment.csv
 │   └── CheckBloodPressure.csv
 │
-├── app.R
-├── README.md
 ├── screenshots/
-│   ├── overview.png
+│   ├── dashboard_overview.png
 │   ├── patient_flow.png
 │   └── simulation.png
 │
-└── docs/
-🚀 Installation
+└── www/
+```
+
+---
+
+## 📊 Dashboard Pages
+
+### Overview
+- Total patients
+- Summary KPIs
+- Operational monitoring
+
+### Patient Analytics
+- Patient type analysis
+- Patient information overview
+- Patient distribution
+
+### Clinical Analytics
+- Medical records analysis
+- Blood pressure monitoring
+- Health metrics
+
+### Patient Flow
+- Department activity
+- Outpatient trends
+- Service utilisation
+
+### Digital Twin Simulation
+- Capacity modelling
+- Scenario simulation
+- Resource utilisation
+
+---
+
+## 🗃 Dataset
+
+| Dataset | Description |
+|----------|-------------|
+| CheckPatientType | Patient classification |
+| Fill_Information | Patient demographic information |
+| MedicalRecord1–4 | Clinical and healthcare records |
+| OutPatientDepartment | Outpatient activity |
+| CheckBloodPressure | Patient vital signs |
+
+---
+
+## 🛠 Technologies Used
+
+- R
+- R Shiny
+- shinydashboard
+- tidyverse
+- ggplot2
+- plotly
+- DT
+- janitor
+- lubridate
+
+---
+
+## 🚀 Installation
 
 Clone repository:
 
+```bash
 git clone https://github.com/yourusername/hospital-digital-twin-dashboard.git
+```
 
-Install dependencies:
+Move into project:
 
+```bash
+cd hospital-digital-twin-dashboard
+```
+
+Install required packages:
+
+```r
 install.packages(c(
 "shiny",
 "shinydashboard",
@@ -121,29 +136,54 @@ install.packages(c(
 "janitor",
 "lubridate"
 ))
+```
 
-Run:
+Run application:
 
+```r
 shiny::runApp()
-📈 Future Enhancements
-Machine Learning prediction
-Patient admission forecasting
-Hospital occupancy prediction
-AI healthcare assistant
-Real-time dashboard integration
-Digital twin scenario optimisation
-💡 Key Learning Outcomes
-R Shiny application development
-Healthcare analytics
-Dashboard design
-Data integration
-Operational simulation
-Digital twin concepts
-👩‍💻 Author
+```
 
-Subbulakshmi Natarajan
-Data Analytics | Healthcare Analytics | Business Intelligence | R Shiny
+---
 
-LinkedIn: (Insert profile)
+## 📷 Dashboard Preview
 
-⭐ If you found this project interesting, feel free to star the repository.
+### Dashboard Overview
+
+![Overview](screenshots/dashboard_overview.png)
+
+---
+
+### Patient Analytics
+
+![Patient Analytics](screenshots/patient_flow.png)
+
+---
+
+### Digital Twin Simulation
+
+![Simulation](screenshots/simulation.png)
+
+---
+
+## 🔮 Future Enhancements
+
+- Real-time patient monitoring
+- Predictive analytics
+- Machine learning integration
+- Occupancy forecasting
+- AI-powered healthcare insights
+
+---
+
+## 👩‍💻 Author
+
+**Subbulakshmi Natarajan**
+
+Healthcare Analytics • Data Analytics • Business Intelligence • R Shiny
+
+LinkedIn: *(Add your LinkedIn URL)*
+
+---
+
+⭐ If you found this project useful, consider giving it a star.ing, feel free to star the repository.
